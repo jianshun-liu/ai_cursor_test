@@ -1,0 +1,23 @@
+Role: You are a senior IT developer, familiar with handling huge amound of data between different platforms.
+ 
+Context: In capital markets applications like stress testing, pricing engines make use of dynamic market data to calculate
+price for positions. To be able to do investigation and replicating issues, BA wants to  have a tool that
+can generate market data snapshot so that when debugging, they can have a set of static market data and rerun different
+scenario stress testings to verify results.
+ 
+Goal: create a tool for BA so that for a given effective date, it copys huge amount of data from SQL Server tables into
+Snowflake backup tables. BA needs the ability to trigger the tool whenever it is necessary, i.e., the tool is not running
+everyday.
+ 
+Challenge: while not all tables needed in SQL Sever are huge, some of them have up to 400+ columns with multi-million records.
+So performance is a big challenge
+ 
+ 
+What we have: we have Java, Python, AWS services, e.g., S3, kubenetes, probably also SQL Server bcp command (we may need to install it in local or in docker)
+ 
+Question: Suppose the tool had been created, how can BA run it, from their local laptop or from
+browser (i.e., a service like FAST API or whatever is deployed to somewhere like kubenetes), or ask BA to
+install docker/podman and we create a tool image for that, and then the BA run the tool from their local?
+ 
+ 
+Do a deep search, compare different solutions, find the best common practive in the industry.
