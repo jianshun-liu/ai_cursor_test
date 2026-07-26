@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mood Recipes</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+  <div class="max-w-2xl mx-auto p-6">
+    <h1 class="text-3xl font-bold mb-8 text-center">Mood-Based Recipe Finder</h1>
+    
+    <div class="bg-white p-6 rounded-lg shadow-md">
+      <h2 class="text-xl font-semibold mb-4">How are you feeling today?</h2>
+      
+      <div class="grid grid-cols-2 gap-4 mb-6">
+        <button data-mood="happy" class="mood-btn bg-green-100 text-green-800 px-4 py-2 rounded hover:bg-green-200">😊 Happy</button>
+        <button data-mood="sad" class="mood-btn bg-blue-100 text-blue-800 px-4 py-2 rounded hover:bg-blue-200">😢 Sad</button>
+        <button data-mood="tired" class="mood-btn bg-yellow-100 text-yellow-800 px-4 py-2 rounded hover:bg-yellow-200">😴 Tired</button>
+        <button data-mood="bored" class="mood-btn bg-red-100 text-red-800 px-4 py-2 rounded hover:bg-red-200">😑 Bored</button>
+      </div>
+
+      <div class="grid grid-cols-2 gap-4 mb-6">
+        <button data-mood="energetic" class="mood-btn bg-purple-100 text-purple-800 px-4 py-2 rounded hover:bg-purple-200">💪 Energetic</button>
+        <button data-mood="cozy" class="mood-btn bg-orange-100 text-orange-800 px-4 py-2 rounded hover:bg-orange-200">🔥 Cozy</button>
+        <button data-mood="fresh" class="mood-btn bg-teal-100 text-teal-800 px-4 py-2 rounded hover:bg-teal-200">🌿 Fresh</button>
+        <button data-mood="indulgent" class="mood-btn bg-pink-100 text-pink-800 px-4 py-2 rounded hover:bg-pink-200">🍫 Indulgent</button>
+      </div>
+
+      <div id="recipe-container" class="hidden">
+        <h3 class="text-lg font-semibold mb-2" id="recipe-name"></h3>
+        <div class="mb-4">
+          <h4 class="font-medium">Ingredients:</h4>
+          <p id="recipe-ingredients"></p>
+        </div>
+        <div class="mb-4">
+          <h4 class="font-medium">Instructions:</h4>
+          <p id="recipe-instructions"></p>
+        </div>
+        <button id="new-recipe-btn" class="bg-gray-200 px-4 py-2 rounded hover:bg-gray-300">Get Another Recipe</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const recipeContainer = document.getElementById('recipe-container');
+    const recipeName = document.getElementById('recipe-name');
+    const recipeIngredients = document.getElementById('recipe-ingredients');
+    const recipeInstructions = document.getElementById('recipe-instructions');
+    let currentMood = null;
+
+    document.querySelectorAll('.mood-btn').forEach(btn => {
+      btn.addEventListener('click', async () => {
+        currentMood = btn.dataset.mood;
+        await fetchRecipe();
+      });
+    });
+
+    document.getElementById('new-recipe-btn').addEventListener('click', fetchRecipe);
+
+    async function fetchRecipe() {
+      console.log('Fetching recipe for mood:', currentMood);
+      const response = await fetch(`/api/recipe?mood=${currentMood}`);
+      const recipe = await response.json();
+      
+      if (recipe.name) {
+        recipeName.textContent = recipe.name;
+        recipeIngredients.textContent = recipe.ingredients;
+        recipeInstructions.textContent = recipe.instructions;
+        recipeContainer.classList.remove('hidden');
+      } else {
+        alert('No recipes found for this mood!');
+      }
+    }
+  </script>
+</body>
+</html> 

@@ -1,0 +1,7 @@
+please generate a mood based recipe reccomendation app. I want the user to select their mood 
+and then get a recipe based on that mood shown to them. They should be able to request 
+a new recipe if they dont like that one.
+
+I want to make this as simple as possible. Please use express for the backend, sqlite 
+for storing the recipes and javascript, html and css with tailwind for the frontend.
+

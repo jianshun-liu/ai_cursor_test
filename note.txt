@@ -1,0 +1,32 @@
+To run this application:
+
+1. Install dependencies:
+   - Ensure you have Node.js and npm installed.
+   - Run `npm install` to install all necessary packages.
+
+2. Initialize the database:
+   - Use the provided script or command to set up the SQLite database with the required tables and data.
+
+3. Start the server:
+   - Run `npm start` or the equivalent command to start the Express server.
+
+4. Open http://localhost:3000 in your browser to access the application.
+
+This simple app allows users to:
+- Select their current mood from four options.
+- Get a random recipe based on their mood.
+- See the recipe name, ingredients, and instructions.
+- Request a new recipe for the same mood if they don't like the current one.
+
+The app uses:
+- SQLite for storing recipes.
+- Express for the backend API.
+- Tailwind CSS for styling.
+- Vanilla JavaScript for frontend interactivity.
+
+You can expand this by:
+- Adding more moods and recipes.
+- Implementing a search feature.
+- Adding recipe images.
+- Creating a form to add new recipes.
+- Adding user authentication and favorites.
