@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BackgroundAgentGlobalSettings">
+    <option name="selectedModelId" value="deepseek-v4-flash" />
+    <option name="selectedProviderName" value="7d685e1e-a079-4627-a2e5-83480ddaa1e3" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="1dcc6a4e-cf69-47ce-bae1-9fb741e7b725" name="Changes" comment="clean up">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CopilotPersistence">
+    <persistenceIdMap>
+      <entry key="_/Users/jianshun/projects/github/ai_cursor_test" value="37E3uILQhKrynbnpWhvaCleZtAV" />
+    </persistenceIdMap>
+  </component>
+  <component name="CopilotUserSelectedModel">
+    <selectedModels>
+      <entry key="edit-panel" value="GPT-5 mini" />
+      <entry key="chat-panel" value="GPT-5 mini" />
+      <entry key="agent-panel" value="GPT-5 mini" />
+    </selectedModels>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="37E3uILQhKrynbnpWhvaCleZtAV" />
+  <component name="ProjectSessionTemplates">
+    <option name="panelTemplate">
+      <template>
+        <option name="modeId" value="Agent" />
+        <option name="model">
+          <model>
+            <option name="modelProviderName" value="7d685e1e-a079-4627-a2e5-83480ddaa1e3" />
+            <option name="modelType" value="byok_id" />
+            <option name="modelValue" value="deepseek-v4-flash" />
+          </model>
+        </option>
+        <option name="targetType" value="BACKGROUND" />
+        <option name="worktreeMode" value="WORKSPACE" />
+      </template>
+    </option>
+  </component>
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="autoscrollToSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;copilot.chat.legacySessionMetadata.migrated&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/jianshun/projects/github/ai_cursor_test/docs/risk_copilot_poc&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/docs/risk_copilot_poc" />
+      <recent name="$PROJECT_DIR$/docs/unified_logging_strategy" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/docs" />
+      <recent name="$PROJECT_DIR$/db" />
+    </key>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1dcc6a4e-cf69-47ce-bae1-9fb741e7b725" name="Changes" comment="" />
+      <created>1766454624495</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1766454624495</updated>
+    </task>
+    <task id="LOCAL-00001" summary="add env.txt">
+      <option name="closed" value="true" />
+      <created>1766455725189</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1766455725189</updated>
+    </task>
+    <task id="LOCAL-00002" summary="update env.txt">
+      <option name="closed" value="true" />
+      <created>1767910887040</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1767910887040</updated>
+    </task>
+    <task id="LOCAL-00003" summary="update env.txt">
+      <option name="closed" value="true" />
+      <created>1767928509278</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1767928509278</updated>
+    </task>
+    <task id="LOCAL-00004" summary="add unified logging strategy discussion">
+      <option name="closed" value="true" />
+      <created>1768188220840</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1768188220840</updated>
+    </task>
+    <task id="LOCAL-00005" summary="add ba table backup discussion">
+      <option name="closed" value="true" />
+      <created>1770005605755</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1770005605755</updated>
+    </task>
+    <task id="LOCAL-00006" summary="add BA table backup discussion">
+      <option name="closed" value="true" />
+      <created>1770005683167</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1770005683167</updated>
+    </task>
+    <task id="LOCAL-00007" summary="add risk copilot poc overview doc">
+      <option name="closed" value="true" />
+      <created>1782919454982</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1782919454982</updated>
+    </task>
+    <task id="LOCAL-00008" summary="clean up">
+      <option name="closed" value="true" />
+      <created>1785080864558</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1785080864558</updated>
+    </task>
+    <task id="LOCAL-00009" summary="clean up">
+      <option name="closed" value="true" />
+      <created>1785082638187</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1785082638187</updated>
+    </task>
+    <task id="LOCAL-00010" summary="add hoopp_ai_hackathon_2026.mp4">
+      <option name="closed" value="true" />
+      <created>1794101555735</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1794101555735</updated>
+    </task>
+    <task id="LOCAL-00011" summary="add hoopp_ai_hackathon_2026_2.mp4">
+      <option name="closed" value="true" />
+      <created>1794284231422</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1794284231422</updated>
+    </task>
+    <task id="LOCAL-00012" summary="add hoopp_ai_hackathon_2026_3.mp4">
+      <option name="closed" value="true" />
+      <created>1794348690889</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1794348690889</updated>
+    </task>
+    <task id="LOCAL-00013" summary="add hoopp_ai_hackathon_2026_4.mp4">
+      <option name="closed" value="true" />
+      <created>1794449341010</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1794449341010</updated>
+    </task>
+    <task id="LOCAL-00014" summary="add evidence-first_investigator_5.mp4">
+      <option name="closed" value="true" />
+      <created>1794627676982</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1794627676982</updated>
+    </task>
+    <task id="LOCAL-00015" summary="clean up">
+      <option name="closed" value="true" />
+      <created>1794793495069</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1794793495069</updated>
+    </task>
+    <task id="LOCAL-00016" summary="clean up">
+      <option name="closed" value="true" />
+      <created>1794793584461</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1794793584461</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="main" />
+                </option>
+              </RecentGroup>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="temp" />
+                </option>
+              </RecentGroup>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="temp-main" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="false" />
+                </map>
+              </option>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add env.txt" />
+    <MESSAGE value="update env.txt" />
+    <MESSAGE value="add unified logging strategy discussion" />
+    <MESSAGE value="add ba table backup discussion" />
+    <MESSAGE value="add BA table backup discussion" />
+    <MESSAGE value="add risk copilot poc overview doc" />
+    <MESSAGE value="add risk copilot poc overview doc" />
+    <MESSAGE value="add hoopp_ai_hackathon_2026.mp4" />
+    <MESSAGE value="add hoopp_ai_hackathon_2026_2.mp4" />
+    <MESSAGE value="add hoopp_ai_hackathon_2026_3.mp4" />
+    <MESSAGE value="add hoopp_ai_hackathon_2026_4.mp4" />
+    <MESSAGE value="add evidence-first_investigator_5.mp4" />
+    <MESSAGE value="clean up" />
+    <option name="LAST_COMMIT_MESSAGE" value="clean up" />
+  </component>
+  <component name="github-copilot-workspace">
+    <instructionFileLocations>
+      <option value=".github/instructions" />
+    </instructionFileLocations>
+    <promptFileLocations>
+      <option value=".github/prompts" />
+    </promptFileLocations>
+  </component>
+</project>

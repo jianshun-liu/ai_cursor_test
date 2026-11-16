@@ -1,0 +1,122 @@
+HOOPP AI Hackathon 2026 — Demo Transcript
+"From Missing Prices to Explainable Evidence"
+An evidence-first incident investigator for production data
+
+
+OPENING: THE PROBLEM
+
+Hello judges. Let's jump right in. Today, we're going to solve a major operational mystery
+by introducing you to an evidence-first incident investigator. Our goal here is simple, but
+incredibly powerful: we're taking fragmented technical evidence — stuff that's normally
+scattered all over databases, logs, and code — and turning it into a clear, understandable,
+and completely reviewable incident explanation.
+
+To see why this is a real game changer, picture this highly relatable root-cause headache.
+You're an analyst looking at your end-of-day pricing data. You know for an absolute fact
+that exactly 30 staged floating rate note positions went into your processing pipeline. But
+when you check the final output, only 21 successful results actually come out. You're
+instantly asking yourself that golden question: "Where on earth did those missing positions
+go?"
+
+So that discrepancy leaves us with exactly nine missing positions.
+
+Now, tracking those down usually triggers an incredibly painful manual triage process.
+You're suddenly forced to navigate messy database schemas, write custom SQL queries
+completely from scratch, dig blindly through application logs, and untangle complex code.
+For a business analyst, this almost always means throwing in the towel, raising a support
+ticket, and kicking off this endless cycle of developer handoffs.
+
+
+THE ARCHITECTURE: AI REASONING VS. DETERMINISTIC TOOLS
+
+So, how do we totally bypass that bottleneck without putting our production systems at risk?
+Well, we solve it by strictly separating the VS Code Copilot agent's natural-language AI
+reasoning from our deterministic Python tools.
+
+Think of it like this: the AI does the critical thinking and formulation, but it literally
+doesn't touch the data directly. Instead, the Python tools safely execute read-only database
+queries and source code searches. And this is all mapped seamlessly via a simple
+configuration-based YAML architecture. This gives us effortless multi-app support that's
+safe, governed, and highly effective.
+
+And honestly, this configuration-based setup hits the nail right on the head for the HOOPP
+hackathon themes. By keeping these roles separate, we're automating complex workflows and
+generating concrete, evidence-backed artifacts. We're taking raw enterprise data and turning
+it into actionable decisions — all while ensuring the investigation is kept safely isolated
+from remediation. You get to observe and explain the system without any risk of accidentally
+altering it.
+
+
+THE FOUR-STEP EVIDENCE TRACE
+
+Let's actually see how this builds a real-time, four-step evidence trace using our prototype.
+
+Step 1 — Discover the inputs
+
+Step one starts with the agent dynamically discovering the inputs. It's not hallucinating or
+guessing here. The Copilot agent formulates a read-only query against the local SQL database
+and confirms that exactly 30 staged inputs exist across three effective dates. Boom —
+baseline evidence is established.
+
+Step 2 — Validate the results
+
+Moving right along to the results table, the agent validates that exact discrepancy we talked
+about. It runs another query and confirms exactly 21 result rows exist.
+
+Now, this is absolutely crucial: this proves the symptom of the gap. We verified exactly how
+many are missing, but we haven't diagnosed the underlying cause just yet.
+
+Step 3 — Correlate the logs (root cause)
+
+To find that true root cause, step three brings in log correlation. The agent performs an
+anti-join, cross-referencing the staging data against the results to isolate what's missing,
+and then links that directly to the application logs. This proves the nine missing results
+didn't just vanish into thin air — they were explicitly excluded at validation.
+
+The evidence specifically shows that holdings 8, 9, and 10 were rejected across all dates
+because of bad quote currencies, zero current factors, and invalid maturity dates. Mystery
+solved. Backed by hard, reviewable evidence.
+
+Step 4A — Locate the pricing logic
+
+But we're not done. To verify the successful results, in step 4A we need mathematical proof.
+So the agent performs a weighted lexical search of the Python repository. It dynamically
+locates the exact mock pricing formula buried in the source code, extracts the logic, and
+identifies its fixed 4% reference rate. It literally shows us exactly how the system
+calculates its numbers.
+
+Step 4B — Recalculate and verify
+
+Which brings us straight to the ultimate proof. In step 4B, the agent translates that Python
+logic directly into a SQL query and recalculates the prices right from the raw staging data.
+The result: the manual recalculation perfectly matches the stored database results down to
+eight decimal places.
+
+We haven't just explained a validation error. We have mathematically verified a success,
+using a crystal-clear, unbroken chain of evidence.
+
+
+ENTERPRISE ROADMAP
+
+Now, while this local prototype completely proves our core concept for the hackathon, our
+roadmap scales this up to a massive, enterprise-ready RAG system. The future evolution means:
+
+- Utilizing tree-sitter for deep, syntax-aware code indexing
+- Combining BM25 and local embeddings for lightning-fast hybrid search
+- Integrating ChromaDB for our vector stores
+- Expanding out to governed enterprise adapters for systems like SQL Server and Snowflake
+
+
+CLOSING
+
+Ultimately, this project represents a fundamental shift in operations. By pairing AI reasoning
+with strict, deterministic data tools, we transform silent operational failures into
+undeniable, mathematically verified proof. We're finally moving away from endless developer
+handoffs and empowering business analysts to investigate safely. It's exactly what it says:
+from missing prices to explainable evidence.
+
+Think about the sheer amount of operational time your teams could save with an investigator
+like this running against your own systems.
+
+I want to leave you with this final thought: if you could ask your most complex production
+data just one single question today, what major data mystery would you solve first?
